@@ -1519,6 +1519,7 @@ p {
   position: relative;
   width: 100%;
   max-width: 600px;
+  height: 500px;
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-xl);
@@ -1527,7 +1528,7 @@ p {
 .carousel-container {
   position: relative;
   width: 100%;
-  aspect-ratio: 3/4;
+  height: 100%;
   background: var(--gray-100);
 }
 
