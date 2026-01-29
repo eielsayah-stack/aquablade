@@ -257,6 +257,11 @@ p {
   gap: var(--space-lg);
 }
 
+/* Hide mobile-only Get Quote link on desktop */
+.mobile-quote-link {
+  display: none;
+}
+
 .nav-links a {
   font-weight: 500;
   color: var(--white);
@@ -1285,18 +1290,25 @@ p {
     border-bottom: none;
   }
 
-  /* Add Get Quote as a menu item on mobile */
-  .nav-links::after {
-    content: 'Get Quote';
-    display: block;
-    background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
-    color: var(--white);
-    padding: var(--space-md);
-    border-radius: var(--radius-md);
-    text-align: center;
-    font-weight: 600;
+  /* Hide mobile quote link on desktop, show on mobile */
+  .mobile-quote-link {
+    display: block !important;
+  }
+
+  .mobile-get-quote {
+    display: block !important;
+    background: linear-gradient(135deg, var(--primary-500), var(--primary-600)) !important;
+    color: var(--white) !important;
+    padding: var(--space-md) !important;
+    border-radius: var(--radius-md) !important;
+    text-align: center !important;
+    font-weight: 600 !important;
     margin-top: var(--space-md);
-    cursor: pointer;
+    border-bottom: none !important;
+  }
+
+  .mobile-get-quote:hover {
+    background: linear-gradient(135deg, var(--primary-600), var(--primary-700)) !important;
   }
 
   .mobile-menu-btn {
