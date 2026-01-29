@@ -241,7 +241,7 @@ p {
 }
 
 .logo img {
-  height: 70px;
+  height: 100px;
   width: auto;
 }
 
@@ -1053,10 +1053,12 @@ p {
 
 .footer-brand .logo {
   margin-bottom: var(--space-lg);
+  display: flex;
+  justify-content: center;
 }
 
 .footer-brand .logo img {
-  height: 80px;
+  height: 100px;
 }
 
 .footer-brand p {
