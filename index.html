@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AquaBlade - Premium water jet cutting services for stone, glass, steel, stainless steel, rubber, carbon fiber and more. Get instant quotes with our dynamic pricing calculator.">
+  <meta name="keywords" content="water jet cutting, precision cutting, stone cutting, glass cutting, steel cutting, carbon fiber cutting">
+  <title>AquaBlade | Precision Water Jet Cutting Services</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="assets/logo.png" alt="AquaBlade Logo">
+      </a>
+      
+      <nav class="nav">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#materials">Materials</a></li>
+          <li><a href="#calculator">Calculator</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#calculator" class="btn btn-primary">Get Quote</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>💧</span>
+          <span>Precision Water Jet Cutting</span>
+        </div>
+        <h1>Cut Anything with <span>Surgical Precision</span></h1>
+        <p>Industry-leading water jet cutting services for stone, glass, steel, and exotic materials. Experience unmatched accuracy with tolerances as tight as ±0.1mm.</p>
+        <div class="hero-buttons">
+          <a href="#calculator" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <line x1="12" y1="8" x2="12" y2="16"></line>
+              <line x1="8" y1="12" x2="16" y2="12"></line>
+            </svg>
+            Get Instant Quote
+          </a>
+          <a href="#materials" class="btn btn-outline btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="10 8 16 12 10 16 10 8"></polygon>
+            </svg>
+            View Materials
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Animated Water Jet -->
+    <div class="water-jet">
+      <div class="jet-nozzle"></div>
+      <div class="jet-stream"></div>
+      <div class="jet-spray">
+        <div class="spray-particle"></div>
+        <div class="spray-particle"></div>
+        <div class="spray-particle"></div>
+        <div class="spray-particle"></div>
+        <div class="spray-particle"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MATERIALS SECTION ========== -->
+  <section class="materials section" id="materials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Materials We <span class="text-gradient">Cut</span></h2>
+        <p>From the hardest ceramics to the most delicate glass, our water jet technology handles it all with precision.</p>
+      </div>
+      
+      <div class="materials-grid">
+        <!-- Stone -->
+        <div class="material-card" data-material="stone">
+          <div class="material-icon">🪨</div>
+          <h4>Stone & Granite</h4>
+          <p>Marble, granite, slate, and natural stone cut with clean edges and intricate detail work.</p>
+          <div class="material-specs">
+            <div class="spec">
+              <strong>Up to 150mm</strong>
+              Thickness
+            </div>
+            <div class="spec">
+              <strong>±0.2mm</strong>
+              Tolerance
+            </div>
+          </div>
+        </div>
+        
+        <!-- Glass -->
+        <div class="material-card" data-material="glass">
+          <div class="material-icon">🔮</div>
+          <h4>Glass & Crystal</h4>
+          <p>Tempered, laminated, and specialty glass cut without cracking or thermal stress.</p>
+          <div class="material-specs">
+            <div class="spec">
+              <strong>Up to 100mm</strong>
+              Thickness
+            </div>
+            <div class="spec">
+              <strong>±0.1mm</strong>
+              Tolerance
+            </div>
+          </div>
+        </div>
+        
+        <!-- Steel -->
+        <div class="material-card" data-material="steel">
+          <div class="material-icon">⚙️</div>
+          <h4>Steel & Iron</h4>
+          <p>Carbon steel, tool steel, and alloy steel with no heat-affected zones.</p>
+          <div class="material-specs">
+            <div class="spec">
+              <strong>Up to 200mm</strong>
+              Thickness
+            </div>
+            <div class="spec">
+              <strong>±0.15mm</strong>
+              Tolerance
+            </div>
+          </div>
+        </div>
+        
+        <!-- Stainless Steel -->
+        <div class="material-card" data-material="stainless-steel">
+          <div class="material-icon">✨</div>
+          <h4>Stainless Steel</h4>
+          <p>304, 316, and specialty grades cut with pristine edge quality.</p>
+          <div class="material-specs">
+            <div class="spec">
+              <strong>Up to 180mm</strong>
+              Thickness
+            </div>
+            <div class="spec">
+              <strong>±0.15mm</strong>
+              Tolerance
+            </div>
+          </div>
+        </div>
+        
+        <!-- Rubber -->
+        <div class="material-card" data-material="rubber">
+          <div class="material-icon">🛞</div>
+          <h4>Rubber & Foam</h4>
+          <p>Natural rubber, neoprene, silicone, and foam materials with clean cuts.</p>
+          <div class="material-specs">
+            <div class="spec">
+              <strong>Up to 300mm</strong>
+              Thickness
+            </div>
+            <div class="spec">
+              <strong>±0.3mm</strong>
+              Tolerance
+            </div>
+          </div>
+        </div>
+        
+        <!-- Carbon Fiber -->
+        <div class="material-card" data-material="carbon-fiber">
+          <div class="material-icon">🏎️</div>
+          <h4>Carbon Fiber</h4>
+          <p>CFRP, Kevlar, and composite materials without delamination.</p>
+          <div class="material-specs">
+            <div class="spec">
+              <strong>Up to 80mm</strong>
+              Thickness
+            </div>
+            <div class="spec">
+              <strong>±0.1mm</strong>
+              Tolerance
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CALCULATOR SECTION ========== -->
+  <section class="calculator section" id="calculator">
+    <div class="container calculator-container">
+      <div class="calculator-card">
+        <div class="calculator-header">
+          <h2>Instant <span class="text-gradient">Quote Calculator</span></h2>
+          <p>Upload your design file, select material and thickness to get an instant cost estimate.</p>
+        </div>
+        
+        <form class="calculator-form" id="calculatorForm">
+          <!-- File Upload -->
+          <div class="file-upload" id="fileUpload">
+            <input type="file" id="cadFile" accept=".dxf,.dwg" aria-label="Upload CAD file">
+            <div class="file-upload-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+            </div>
+            <h4>Drag & drop your CAD file</h4>
+            <p>or click to browse from your computer</p>
+            <div class="file-types">
+              <span class="file-type-badge">DXF</span>
+              <span class="file-type-badge">DWG</span>
+            </div>
+          </div>
+          
+          <div class="file-info" id="fileInfo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            <span class="file-name" id="fileName"></span>
+            <button type="button" class="remove-file" id="removeFile" aria-label="Remove file">×</button>
+          </div>
+          
+          <!-- Material & Thickness -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="material">Material</label>
+              <select id="material" required>
+                <option value="">Select material</option>
+                <option value="stone">Stone & Granite</option>
+                <option value="glass">Glass & Crystal</option>
+                <option value="steel">Steel & Iron</option>
+                <option value="stainless-steel">Stainless Steel</option>
+                <option value="rubber">Rubber & Foam</option>
+                <option value="carbon-fiber">Carbon Fiber</option>
+                <option value="aluminum">Aluminum</option>
+                <option value="titanium">Titanium</option>
+                <option value="copper">Copper & Brass</option>
+                <option value="ceramic">Ceramic & Tile</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="thickness">Thickness (mm)</label>
+              <input type="number" id="thickness" placeholder="e.g., 10" min="1" max="300" step="0.5" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="quantity">Quantity</label>
+              <input type="number" id="quantity" placeholder="e.g., 1" min="1" value="1" required>
+            </div>
+          </div>
+          
+          <!-- Manual Path Input (Optional) -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="pathLength">Cutting Path Length (mm) - Optional</label>
+              <input type="number" id="pathLength" placeholder="Auto-calculated from file or enter manually" min="1" step="1">
+            </div>
+            <div class="form-group">
+              <label for="pierceCount">Number of Pierces - Optional</label>
+              <input type="number" id="pierceCount" placeholder="Auto-calculated or enter manually" min="1" value="1">
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-lg calculate-btn" id="calculateBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+              <line x1="4" y1="10" x2="20" y2="10"></line>
+              <line x1="10" y1="4" x2="10" y2="20"></line>
+            </svg>
+            Calculate Cost
+          </button>
+        </form>
+        
+        <!-- Results Section -->
+        <div class="results-section" id="resultsSection">
+          <div class="results-header">
+            <h3>Cost Breakdown</h3>
+          </div>
+          
+          <div class="results-table-wrapper">
+            <table class="results-table">
+              <thead>
+                <tr>
+                  <th>Parameter</th>
+                  <th>Value</th>
+                  <th>Unit</th>
+                </tr>
+              </thead>
+              <tbody id="resultsBody">
+                <!-- Dynamic content -->
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="results-summary">
+            <div class="summary-card secondary">
+              <div class="label">Pierce Time</div>
+              <div class="value" id="totalPierceTime">0 sec</div>
+            </div>
+            <div class="summary-card secondary">
+              <div class="label">Cut Time</div>
+              <div class="value" id="totalCutTime">0 min</div>
+            </div>
+            <div class="summary-card">
+              <div class="label">Total Cost</div>
+              <div class="value" id="totalCost">$0.00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2>Why Choose <span class="text-gradient">AquaBlade?</span></h2>
+          <p>With over a decade of experience in precision cutting, we've mastered the art of water jet technology. Our state-of-the-art equipment and expert team deliver results that exceed expectations.</p>
+          
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>Precision Accuracy</h4>
+                <p>Tolerances as tight as ±0.1mm for the most demanding applications.</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>Fast Turnaround</h4>
+                <p>Rush orders available with 24-48 hour delivery on most projects.</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>No Heat Affected Zones</h4>
+                <p>Cold cutting process preserves material properties and prevents warping.</p>
+              </div>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                </svg>
+              </div>
+              <div class="feature-text">
+                <h4>Any Material</h4>
+                <p>From soft rubber to hardened steel, we cut virtually any material.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&h=700&fit=crop" alt="Water jet cutting in action" class="about-image-main">
+        </div>
+      </div>
+      
+      <!-- Stats -->
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50K+</div>
+          <div class="stat-label">Parts Cut</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">200+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label">Precision Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="assets/logo.png" alt="AquaBlade Logo">
+          </a>
+          <p>Precision water jet cutting services for industrial, commercial, and artistic applications. Cutting the future, one drop at a time.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#materials">Materials</a></li>
+            <li><a href="#calculator">Get Quote</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#">Metal Cutting</a></li>
+            <li><a href="#">Stone & Tile</a></li>
+            <li><a href="#">Glass Cutting</a></li>
+            <li><a href="#">Composites</a></li>
+            <li><a href="#">Custom Projects</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-heading">Contact Us</h4>
+          <div class="footer-contact">
+            <div class="contact-item">
+              <span class="icon">📍</span>
+              <span>123 Industrial Ave, Manufacturing District</span>
+            </div>
+            <div class="contact-item">
+              <span class="icon">📞</span>
+              <span>+1 (555) 123-4567</span>
+            </div>
+            <div class="contact-item">
+              <span class="icon">✉️</span>
+              <span>info@aquablade.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2026 AquaBlade. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"></polygon>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
