@@ -386,10 +386,9 @@ p {
   display: inline-flex;
   align-items: center;
   gap: var(--space-sm);
-  background: rgba(79, 195, 247, 0.1);
-  border: 1px solid rgba(79, 195, 247, 0.3);
-  padding: var(--space-sm) var(--space-md);
-  border-radius: var(--radius-full);
+  background: transparent;
+  border: none;
+  padding: 0;
   color: var(--primary-300);
   font-size: 0.875rem;
   font-weight: 500;
@@ -1275,10 +1274,11 @@ p {
   }
 
   .nav-links a {
-    color: var(--gray-700);
+    color: var(--primary-600);
     text-shadow: none;
     padding: var(--space-md);
     border-bottom: 1px solid var(--light-gray);
+    font-weight: 600;
   }
 
   .nav-links a:last-child {
