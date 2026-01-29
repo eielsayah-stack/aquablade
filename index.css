@@ -1002,7 +1002,7 @@ p {
   bottom: calc(-1 * var(--space-xl));
   background: linear-gradient(135deg, var(--primary-200), var(--primary-300));
   border-radius: var(--radius-xl);
-  z-index: 1;
+  z-index: -1;
 }
 
 /* Stats Grid */
