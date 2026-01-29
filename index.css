@@ -241,7 +241,7 @@ p {
 }
 
 .logo img {
-  height: 50px;
+  height: 70px;
   width: auto;
 }
 
@@ -1056,8 +1056,7 @@ p {
 }
 
 .footer-brand .logo img {
-  height: 60px;
-  filter: brightness(0) invert(1);
+  height: 80px;
 }
 
 .footer-brand p {
